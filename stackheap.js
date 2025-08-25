@@ -11,6 +11,9 @@
 // Boolean
 // Date
 
+
+// it is value copy
+
 // let name = "gaurav"
 
 // let newname = name
@@ -20,16 +23,23 @@
 // console.log(name);
 
 // heap
-// so in heap when we take refernce and store it in another variable we get access to the real one so any chnages made it gets refelcted in the original one because we are able to access the original one which is also called as deep copy 
+// so in heap when we take refernce and store it in another variable we get access to the real one so any chnages made it gets refelcted in the original one because we are able to access the original one  
 
-// let userone = {
-//     email:"taurussilver@gmail.com",
-//     state: "assam"
+let userone = {
+    email:"taurussilver@gmail.com",
+    state: "assam"
 
-// }
-// let usertwo = userone
+}
+let usertwo = userone
 
-// usertwo.state = "delhi"
+usertwo.state = "delhi"
 
-// console.log(userone);
+console.log(userone.state);
 
+
+so in case of nested  shallow copy creates first level of copy or we can say in case of nested only the first level will be copied the next inside part will be refernce 
+so for nested we use deep copy
+and there is the reference which points to the same memory location 
+
+
+so final only in case of non primitive objeccts or arrays we create shallow copy and deeep copy because prmtive is directly stored in stack creating a value of independent copy
