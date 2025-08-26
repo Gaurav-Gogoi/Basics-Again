@@ -1,4 +1,13 @@
 const myarr = [1,2,3,4,5]
+
+// myarr.unshift(22)
+
+// unshif adds value from first
+myarr.shift()
+// shift removes the first value
+console.log(myarr);
+
+
 // console.log(myarr[1]);
 
 const myarr2 = new Array(1,2,3)
@@ -9,7 +18,6 @@ const myarr3 = myarr2.join()
 // myarr.push(6)
 // myarr.pop()
 
-// myarr.shift()
 
 // console.log(myarr);
 console.log("A", myarr);
